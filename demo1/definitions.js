@@ -1,6 +1,6 @@
 // VARIABLES GLOBALES
 
-console.log(this); // variable Global
+// console.log(this); // variable Global
 // console.log(process); // Información del proceso en ejecucion
 // console.log(window); // window no existe
 // console.log(document); // document no existe
@@ -8,8 +8,11 @@ console.log(this); // variable Global
 // // Objetos de siempre como Date o Error
 
 const date = new Date();
-const error = new Error();
+const error = new Error("Hubo un error");
+
+// console.log(date);
+// console.log(error);
 
 // // metodos globales como setTimeout
 
-// setTimeout(() => console.log("Node!"), 3000);
+setInterval(() => console.log("Node!"), 1000);

@@ -1,3 +1,5 @@
+const language = require("./lang");
+
 function greetings(name) {
   if (language === "en") {
     console.log(`Welcome ${name}`);
@@ -11,3 +13,5 @@ function greetings(name) {
     console.log(`Willkommen ${name}`);
   }
 }
+
+module.exports = greetings;

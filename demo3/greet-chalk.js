@@ -1,9 +1,9 @@
 // import chalk
-
+const chalk = require("chalk");
 const language = require("./lang");
 
 const log = function (values) {
-  console.log(chalk.green(values));
+  console.log(chalk.red(values));
 };
 
 function greetings(name) {
@@ -20,4 +20,4 @@ function greetings(name) {
   }
 }
 
-module.exports = greetings;
+module.exports = { greetings, saludar };
