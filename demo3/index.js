@@ -1,10 +1,8 @@
-const greetings = require("./lang-chalk");
-const user = require("./name.json");
+const greetings = require("./greet-chalk");
+const user = require("./name.json"); // tambien podemos importar archivos json
 
-function getFullName(user) {
-  return `${user.name} ${user.lastname}`;
-}
+greetings(`${user.name} ${user.lastname}`);
 
-const name = getFullName(user);
-
-greetings(name);
+// greetings("facu");
+// setLanguage("de");
+// greetings("facu");

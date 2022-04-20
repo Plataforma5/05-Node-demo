@@ -1,6 +1,6 @@
 const date = new Date(); // hora actual
-
-const initial = date.getTime();
+console.log("Inicio del archivo");
+const initial = date.getTime(); // tiempo en milisegundos
 
 setTimeout(function () {
   console.log("Esto deberia pasar inmediatamente");

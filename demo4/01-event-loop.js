@@ -1,7 +1,13 @@
-console.log("Inicio del archivo");
+// event loop - setTimeout
 
-setTimeout(function () {
-  console.log("Vengo del futuro");
-}, 3000);
+setTimeout(() => {
+  console.log("TIMEOUT");
+}, 0);
 
-console.log("Fin del archivo");
+let num = 0;
+
+fs.readFile(nombre, function (err, file) {
+  num = file;
+
+  console.log(num);
+});
