@@ -10,6 +10,6 @@ console.log(this); // variable Global
 const date = new Date();
 const error = new Error();
 
-// // metodos globales como setTimeout
+// // métodos globales como setTimeout
 
 // setTimeout(() => console.log("Node!"), 3000);
